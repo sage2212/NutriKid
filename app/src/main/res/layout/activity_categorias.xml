@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Categorias">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#4682B4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txttitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/letra"
+            android:text="Categoría"
+            android:textColor="#000080"
+            android:textSize="44dp" />
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_frutas"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Frutas"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_vege"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Verduras"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_prote"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Proteinas"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_legu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Leguminosas"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="71dp"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cere"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Cereales"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_acti"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/niveles"
+                android:backgroundTint="@color/Blanco"
+                android:text="Actividad Fisica"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imbtn_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Blanco"
+                android:src="@android:drawable/ic_menu_revert" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

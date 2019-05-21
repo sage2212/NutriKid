@@ -218,7 +218,7 @@ public class Leguminosas_2 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra H")
+        builder.setMessage("Empieza con Hab\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)

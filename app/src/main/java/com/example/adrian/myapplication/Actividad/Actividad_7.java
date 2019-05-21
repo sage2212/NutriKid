@@ -215,7 +215,7 @@ public class Actividad_7 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra C")
+        builder.setMessage("Empieza con Cic\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)

@@ -5,7 +5,10 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,14 +31,21 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/neon.otf");
+
+        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/maintitle.ttf");
         TextView txt = (TextView) findViewById(R.id.title);
-
         txt.setTypeface(face);
-
+        Typeface face2 = Typeface.createFromAsset(getAssets(),"fonts/main.ttf");
+        Typeface face3 = Typeface.createFromAsset(getAssets(),"fonts/kids.ttf");
+        TextView txtSlogan = (TextView) findViewById(R.id.txtSlogan);
+        txtSlogan.setTypeface(face3);
         Button btn = (Button) findViewById(R.id.btn_jugar);
         Button btn2 = findViewById(R.id.btninst);
         Button btn3 = findViewById(R.id.btnacerca);
+        btn.setTypeface(face2);
+        btn2.setTypeface(face2);
+        btn3.setTypeface(face2);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

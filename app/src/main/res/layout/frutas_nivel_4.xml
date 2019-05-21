@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Frutas.Frutas_4">
 
     <LinearLayout
@@ -26,7 +27,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="189dp"
                 android:layout_height="201dp"
-                android:src="@drawable/papaya"/>
+                android:src="@drawable/papaya" />
 
         </LinearLayout>
 
@@ -34,16 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:background="@drawable/borde"
             android:layout_margin="10dp"
+            android:background="@drawable/borde"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Elimina los parásitos intestinales."
                 android:fontFamily="@font/texto"
+                android:text="Elimina los parásitos intestinales."
                 android:textColor="#000000"
                 android:textSize="30dp" />
 
@@ -51,8 +52,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aumentan tus defensas del cuerpo."
                 android:fontFamily="@font/texto"
+                android:text="Aumentan tus defensas del cuerpo."
                 android:textColor="#000000"
                 android:textSize="30dp" />
 
@@ -60,8 +61,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mejora la salud de piel."
                 android:fontFamily="@font/texto"
+                android:text="Mejora la salud de piel."
                 android:textColor="#000000"
                 android:textSize="30dp" />
 
@@ -75,7 +76,7 @@
 
             <EditText
                 android:id="@+id/txtNombre"
-                android:layout_width="181dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -87,39 +88,46 @@
 
                 <ImageButton
                     android:id="@+id/imageButton"
-                    android:layout_width="58dp"
-                    android:layout_height="fill_parent"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:onClick="Enviar"
                     android:scaleType="centerInside"
-                    android:src="@drawable/checkbox" />
+                    android:src="@drawable/ok" />
 
                 <ImageButton
                     android:id="@+id/ayuda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:onClick="PopUp"
-                    android:src="@android:drawable/ic_menu_help"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/help"
                     android:text="Pop-Up" />
+
                 <ImageButton
                     android:id="@+id/btnSpeak"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/app_name"
                     android:onClick="onClickImgBtnHablar"
-                    android:src="@android:drawable/ic_btn_speak_now" />
+                    android:scaleType="centerInside"
+                    android:src="@drawable/mic" />
 
                 <ImageButton
                     android:id="@+id/imgbtn_reg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
                     android:background="@android:color/transparent"
-
-                    android:src="@android:drawable/ic_menu_revert" />
+                    android:scaleType="centerInside"
+                    android:src="@drawable/returnback" />
             </LinearLayout>
 
         </LinearLayout>

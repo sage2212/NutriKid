@@ -222,7 +222,7 @@ public class Frutas_1 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra P")
+        builder.setMessage("Empieza con Plá\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)

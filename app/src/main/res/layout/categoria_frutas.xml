@@ -173,8 +173,9 @@
 
             <ImageButton
                 android:id="@+id/imgbtn_reg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/niveles"
                 android:backgroundTint="@color/Blanco"
                 android:src="@android:drawable/ic_menu_revert" />
         </LinearLayout>

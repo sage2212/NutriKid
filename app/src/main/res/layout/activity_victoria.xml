@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/fondovictoria"
     tools:context=".Activity.Victoria">
 
     <LinearLayout
@@ -76,7 +77,8 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/niveles"
+                android:fontFamily="@font/main"
                 android:text="Menu principal" />
 
         </LinearLayout>

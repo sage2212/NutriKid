@@ -26,7 +26,15 @@ public class Victoria extends Activity {
 
 
         Typeface face = Typeface.createFromAsset(getAssets(),"fonts/splatch.ttf");
-        txt1.setTypeface(face);
+        Typeface face2 = Typeface.createFromAsset(getAssets(),"fonts/main.ttf");
+        txt1.setTypeface(face2);
+        txt2.setTypeface(face2);
+        txt3.setTypeface(face2);
+        txt4.setTypeface(face2);
+        txt5.setTypeface(face2);
+        txt6.setTypeface(face2);
+        btn_1.setTypeface(face2);
+
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

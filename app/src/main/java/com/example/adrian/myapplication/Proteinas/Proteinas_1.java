@@ -40,12 +40,15 @@ public class Proteinas_1 extends Activity {
         Nombre = (EditText) findViewById(R.id.txtNombre);
         TextView txt1 = (TextView) findViewById(R.id.textView1);
         TextView txt2 = (TextView) findViewById(R.id.textView2);
+        TextView txt3 = (TextView) findViewById(R.id.textView3);
+
         grabar = (TextView) findViewById(R.id.txtNombre);
 
         //Declarar que objetos tendran las fuente
         Typeface face = Typeface.createFromAsset(getAssets(),"fonts/texto.ttf");
         txt1.setTypeface(face);
         txt2.setTypeface(face);
+        txt3.setTypeface(face);
         ImageButton btn = (ImageButton) findViewById(R.id.imgbtn_reg);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -216,7 +219,7 @@ public class Proteinas_1 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra L")
+        builder.setMessage("Empieza con Lec\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)

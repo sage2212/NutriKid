@@ -17,6 +17,8 @@ import com.example.adrian.myapplication.Categoria.Cate_proteinas;
 import com.example.adrian.myapplication.Categoria.Cate_vegetales;
 import com.example.adrian.myapplication.R;
 
+import org.w3c.dom.Text;
+
 public class Categorias extends Activity {
 
     @Override
@@ -34,8 +36,14 @@ public class Categorias extends Activity {
         TextView txt = (TextView) findViewById(R.id.txttitulo);
 
         //Declarar que objetos tendran las fuente
-        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/letra.ttf");
+        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/main.ttf");
         txt.setTypeface(face);
+        btn_1.setTypeface(face);
+        btn_2.setTypeface(face);
+        btn_3.setTypeface(face);
+        btn_4.setTypeface(face);
+        btn_5.setTypeface(face);
+        btn_6.setTypeface(face);
 
         //Llamar las categorias
         btn_1.setOnClickListener(new View.OnClickListener() {

@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name=".activity_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -279,7 +279,10 @@
             android:label="@string/title_activity_acerca" />
         <activity
             android:name=".prueba"
-            android:label="@string/title_activity_prueba"></activity>
+            android:label="@string/title_activity_prueba" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label=""></activity>
     </application>
 
 </manifest>

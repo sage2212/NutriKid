@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondomain"
     tools:context=".Activity.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFC0CB"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +24,9 @@
             android:fontFamily="@font/neon"
             android:gravity="center_horizontal"
             android:text="NUTRIKIDS"
-            android:textColor="#ec10e9"
+            android:textColor="#ffffff"
             android:textSize="55dp"
+            android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -34,17 +35,27 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="172dp"
+            android:layout_width="217dp"
+            android:layout_height="86dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:layout_weight="-1"
             android:background="@android:color/transparent"
             android:src="@drawable/principal" />
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/kids"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="Aprendiendo y jugando con los alimentos." />
 
         <Button
             android:id="@+id/btn-jugar"
-            android:layout_width="112dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
@@ -55,7 +66,7 @@
 
         <Button
             android:id="@+id/btninst"
-            android:layout_width="wrap_content"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"

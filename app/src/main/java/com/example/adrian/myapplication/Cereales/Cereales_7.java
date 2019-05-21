@@ -110,7 +110,7 @@ public class Cereales_7 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra P")
+        builder.setMessage("Empieza con P\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setCancelable(false)
                 .setNeutralButton("Aceptar",

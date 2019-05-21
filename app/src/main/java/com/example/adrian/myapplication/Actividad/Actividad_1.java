@@ -217,10 +217,13 @@ public class Actividad_1 extends Activity {
             }
         }
     }
+    boolean showingFirst = true;
 
     public void PopUp(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra F")
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        if(showingFirst == true){
+
+            builder.setMessage("Empieza con  Fút\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)
@@ -232,5 +235,22 @@ public class Actividad_1 extends Activity {
                         });
         AlertDialog alert = builder.create();
         alert.show();
+            showingFirst = false;
+        }else{
+            AlertDialog.Builder builders = new AlertDialog.Builder(this);
+            builders.setMessage("Empieza con  Fútbol\nSi no puedes pide ayuda a un adulto!\n")
+                    .setTitle("Ayuda")
+                    .setIcon(R.drawable.pregunta)
+                    .setCancelable(false)
+                    .setNeutralButton("Aceptar",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+            AlertDialog alert = builders.create();
+            alert.show();
+            showingFirst = true;
+        }
     }
 }

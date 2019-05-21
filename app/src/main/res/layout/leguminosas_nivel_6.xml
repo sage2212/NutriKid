@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Leguminosas.Leguminosas_6">
 
     <LinearLayout
@@ -75,7 +76,7 @@
 
             <EditText
                 android:id="@+id/txtNombre"
-                android:layout_width="181dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -83,44 +84,50 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/imageButton"
-                    android:layout_width="58dp"
-                    android:layout_height="fill_parent"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@android:color/transparent"
                     android:onClick="Enviar"
                     android:scaleType="centerInside"
-                    android:src="@drawable/checkbox" />
+                    android:layout_gravity="center"
+                    android:src="@drawable/ok" />
 
                 <ImageButton
                     android:id="@+id/ayuda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@android:color/transparent"
                     android:onClick="PopUp"
-                    android:src="@android:drawable/ic_menu_help"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:src="@drawable/help"
                     android:text="Pop-Up" />
+
                 <ImageButton
                     android:id="@+id/btnSpeak"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
                     android:onClick="onClickImgBtnHablar"
-                    android:src="@android:drawable/ic_btn_speak_now" />
+                    android:src="@drawable/mic" />
 
                 <ImageButton
                     android:id="@+id/imgbtn_reg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
                     android:background="@android:color/transparent"
-
-                    android:src="@android:drawable/ic_menu_revert" />
+                    android:src="@drawable/returnback" />
             </LinearLayout>
 
         </LinearLayout>

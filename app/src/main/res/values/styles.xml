@@ -6,6 +6,7 @@
     </style>
 
     <style name="Tema" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 

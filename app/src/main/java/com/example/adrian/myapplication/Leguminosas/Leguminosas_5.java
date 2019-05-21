@@ -84,7 +84,7 @@ public class Leguminosas_5 extends Activity {
                 AlertDialog alert = builder.create();
                 alert.show();
             }else {
-                if(Nombre.getText().toString().equals("arveja")||(Nombre.getText().toString().equals("ARVEJA"))||(Nombre.getText().toString().equals("Arveja"))){
+                if(Nombre.getText().toString().equals("chicharos")||(Nombre.getText().toString().equals("CHICHAROS"))||(Nombre.getText().toString().equals("Chicharos"))){
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setMessage("Pasaste al siguiente nivel")
                             .setTitle("Felicidades")
@@ -169,7 +169,7 @@ public class Leguminosas_5 extends Activity {
             AlertDialog alert = builder.create();
             alert.show();
         }else {
-            if(Nombre.getText().toString().equals("arveja")||(Nombre.getText().toString().equals("ARVEJA"))||(Nombre.getText().toString().equals("Arveja"))){
+            if(Nombre.getText().toString().equals("chicharos")||(Nombre.getText().toString().equals("CHICHAROS"))||(Nombre.getText().toString().equals("Chicharos"))){
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage("Pasaste al siguiente nivel")
                         .setTitle("Felicidades")
@@ -215,7 +215,7 @@ public class Leguminosas_5 extends Activity {
 
     public void PopUp(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Empieza con la letra A")
+        builder.setMessage("Empieza con Chi\nSi no puedes pide ayuda a un adulto!\n")
                 .setTitle("Ayuda")
                 .setIcon(R.drawable.pregunta)
                 .setCancelable(false)
